@@ -1,0 +1,30 @@
+#+TITLE: cryptol layer
+
+[[img/cryptol.png]]
+
+Cryptol: The Language of Cryptography
+
+* Table of Contents                                        :TOC_4_gh:noexport:
+ - [[#description][Description]]
+ - [[#install][Install]]
+ - [[#key-bindings][Key bindings]]
+
+* Description
+This layer adds support for the [[http://cryptol.net/][Cryptol]] language, including minimal syntax
+highlighting and a REPL.
+
+Note that [[https://github.com/thoughtpolice/cryptol-mode][cryptol-mode]] itself is fairly simple and a bit out of date, so this
+layer can't provide much functionality.
+
+* Install
+To use this configuration layer, add it to your =~/.spacemacs=. You will need to
+add =cryptol= to the existing =dotspacemacs-configuration-layers= list in this
+file.
+
+* Key bindings
+
+| Key Binding | Description                                        |
+|-------------+----------------------------------------------------|
+| ~SPC m s b~ | Open a new REPL connection                         |
+| ~SPC m s r~ | Eval the current buffer in the REPL                |
+| ~SPC m s t~ | Print the type of the symbol at point in the REPL  |
