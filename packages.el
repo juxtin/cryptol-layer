@@ -19,7 +19,7 @@
     (progn
       (defun cryptol-eval-string (str)
         (interactive)
-        (let ((fname "cyptoleval__temp.cry"))
+        (let ((fname ".cryptol-mode_repl_eval_temp.cry"))
           (with-temp-file fname
             (insert str))
           (comint-send-string cryptol-repl-process (concat ":l " fname "\n"))))
